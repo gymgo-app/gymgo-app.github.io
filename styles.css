@@ -1,88 +1,107 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+.btn-light {
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-light:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Gallery Styles */
+.gallery {
+  padding: 30px;
+}
+
+.gallery h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section .container {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.about-section {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
   }
-  
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-bottom: 0.3em;
-  }
-  
-  header p {
-    font-size: 1.25rem;
-  }
-  
-  .btn-light {
-    font-weight: bold;
-    padding: 0.75em 1.5em;
+  .hero-section p {
     font-size: 1.1rem;
   }
-  
   h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
   }
-  
-  .card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.5em;
-  }
-  
-  footer {
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  footer a {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  /* Gallery Styles */
-  .gallery {
-    padding: 30px;
-  }
-  
-  .gallery h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-img-top {
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
-  }
-  
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GymGo – Fitneszpartner Márkáknak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        .btn-orange {
+            background-color: #ff6f2c;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+            .btn-orange:hover {
+                background-color: #ff5a10;
+                transform: scale(1.03);
+            }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover .icon {
+            transform: scale(1.15);
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #ff6f2c;
+            margin: 0;
+        }
+
+        .hero-section {
+            background: url('silhouette-woman-gym.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 880px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+            padding: 2rem;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            border-radius: 0.75rem;
+            margin: 2rem;
+        }
+
+        .hero-text {
+            flex: 1 1 300px;
+            max-width: 600px;
+        }
+
+        .hero-logo {
+            flex: 0 1 200px;
+            text-align: center;
+        }
+
+            .hero-logo img {
+                max-height: 180px;
+                width: auto;
+            }
+
+        .icon-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+            .icon-grid img {
+                height: 64px;
+                width: auto;
+                opacity: 0.85;
+                transition: transform 0.3s;
+            }
+
+                .icon-grid img:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+
+        .card.shiny {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border: none;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #212529;
+        }
+
+            .card.shiny:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            }
+
+            .card.shiny .card-title,
+            .card.shiny .card-text {
+                color: #212529 !important;
+            }
+
+        @media (max-width: 768px) {
+            .hero-content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .display-4 {
+                font-size: 2rem;
+            }
+
+            .display-5 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-brand">
+            <h1>GymGo</h1>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content-wrapper">
+            <div class="hero-text">
+                <h1 class="display-4">GYMGO™ – Hirdess a legmotiváltabb közönségnek – közvetlenül az edzés alatt.</h1>
+                <p class="lead">A GymGo egy fitneszalkalmazás, amely hirdetési platformként szolgál azoknak a márkáknak, akik aktív, egészségtudatos embereket szeretnének elérni közvetlenül az edzések idején.</p>
+                <a href="#kapcsolat" class="btn btn-orange btn-lg mt-3">Kezdj hozzá!</a>
+            </div>
+            <div class="hero-logo">
+                <img src="gymgologo_dark.png" alt="GymGo logó">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Miért éri meg nálunk megjelenni?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">🎯</div>
+                            <h5 class="card-title">Edzés közbeni figyelem</h5>
+                            <p class="card-text">A felhasználó edzés előtt, után és közben aktív és befogadó – nem „scroll-zajban” jelenik meg a hirdetés.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">👥</div>
+                            <h5 class="card-title">Releváns közönség</h5>
+                            <p class="card-text">18–35 évesek, akik minden edzéskor használják az appot – ők a Te célcsoportod is.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">📈</div>
+                            <h5 class="card-title">Konverzióra optimalizálva</h5>
+                            <p class="card-text">Mérés, linkelés, utókövetés – a cél, hogy eladás vagy kapcsolatfelvétel történjen, ne csak megjelenés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="mb-3 text-start display-5">Mi az a GymGo?</h2>
+                    <p class="lead">Egy edzéskövető és tervező alkalmazás, mely:</p>
+                    <ul class="lead ps-0 list-unstyled">
+                        <li>✔ Teljesen ingyenes használat</li>
+                        <li>✔ Soha nem lesz paywall</li>
+                        <li>✔ Több mint 650 gyakorlat az adatbázisban</li>
+                        <li>✔ Edzések megosztása közösségi médiára egy kattintással</li>
+                        <li>✔ Multinyelvű támogatás (angol, német, spanyol, stb.)</li>
+                        <li>✔ Profi statisztikák, automatikus PR-követés</li>
+                    </ul>
+                    <a href="https://gymgo-app.github.io/" class="btn btn-orange mt-3" target="_blank">Nézd meg az oldalt</a>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left">
+                    <img src="mockup1.png" alt="GymGo alkalmazás" class="img-fluid rounded shadow" style="max-width: 55%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Miben van igazán jó product-fit?</h2>
+            <p class="lead">A GymGo platformon ezek a kategóriák illeszkednek legjobban a közönség igényeihez:</p>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <h5>👕 Apparel</h5>
+                    <p>Edzőruházat, sportmelltartók, shortok, márkás pólók és technikai anyagok.</p>
+                    <img src="apparel_mockup.png" alt="Apparel termékek" class="img-fluid rounded shadow mt-3">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <h5>🥤 Táplálékkiegészítők</h5>
+                    <p>Fehérje, kreatin, BCAA, vitamincsomagok, italporok – amit edzés közben és után keresnek.</p>
+                    <img src="food_mockup.png" alt="Táplálékkiegészítők" class="img-fluid rounded shadow mt-3">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <h5>🧘 Fitneszszolgáltatások</h5>
+                    <p>Edzőterem előfizetések, online edzésprogramok, coaching, dietetikus tanácsadás.</p>
+                    <img src="services_mockup.png" alt="Fitneszszolgáltatás" class="img-fluid rounded shadow mt-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Milyen célközönséget érsz el nálunk?</h2>
+            <div class="p-5 bg-white border-start border-5 border-warning rounded shadow-sm mb-4" data-aos="fade-in">
+                <p class="lead fw-semibold fst-italic m-0" style="font-size: 1.4rem;">
+                    – Abban hiszünk, hogy ha valaki komolyan veszi annyira az edzést, hogy naplót vezessen róla, akkor nagy eséllyel költ is táplálékkiegészítőkre, edzéseszközökre vagy sportfelszerelésre.
+                </p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">💪</div>
+                            <h5 class="card-title">Egészségtudatos, motivált közönség</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">🎯</div>
+                            <h5 class="card-title">18–35 év közötti férfiak és nők</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shiny h-100">
+                        <div class="card-body">
+                            <div class="icon">🔥</div>
+                            <h5 class="card-title">Aktív életmódot követők, edzéstervezők</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Referral lehetőség – valódi értékteremtés</h2>
+            <p class="lead text-center">Lehetőség van együttműködésre referral alapon is (Train2Gain). Így a felhasználók kedvezményt kapnak, Te új vevőket nyersz, mi pedig növeljük az elköteleződést – igazi win-win helyzet minden résztvevő számára.</p>
+        </div>
+    </section>
+
+    <section class="text-center py-5 bg-light" id="kapcsolat">
+        <div class="container">
+            <h2>Lépj Kapcsolatba Velünk</h2>
+            <p class="lead mb-4">Szeretnéd, hogy a Te márkád is megjelenjen a GymGo platformján?</p>
+            <a href="mailto:gymgo.application@gmail.com" class="btn btn-orange btn-lg">Email küldése</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            Készítette: Faller Ádám |
+            <a href="mailto:gymgo.application@gmail.com" class="text-white text-decoration-underline">Kapcsolat</a> |
+            <a href="tel:+36202252416" class="text-white text-decoration-underline">+36 20 225 2416</a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
